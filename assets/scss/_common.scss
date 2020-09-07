@@ -31,3 +31,12 @@ a {
   text-decoration: none;
   color: $color-light;
 }
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
