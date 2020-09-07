@@ -45,12 +45,19 @@
         margin: 5px;
         padding: 10px 15px;
         border-radius: 4px;
+
+        &:hover,
+        &:focus {
+          color: $color-accent-menu;
+          background: rgba(0, 0, 0, 0.4);
+          @include text-shadow;
+        }
       }
 
       &.active a {
-        color: #bb1a1a;
+        color: $color-accent-menu;
         background: rgba(0, 0, 0, 0.4);
-        text-shadow: 1px 1px 3px $color-dark, 1px 1px 10px $color-dark;
+        @include text-shadow;
       }
     }
   }
