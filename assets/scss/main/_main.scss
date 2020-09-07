@@ -1,33 +1,26 @@
-* {
-  box-sizing: border-box;
+.container {
+  display: flex;
 }
 
-html {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  line-height: 1.5em;
-  overflow: hidden;
+main {
+  display: block;
 }
 
-body {
-  overflow: hidden;
-  width: 100%;
-  max-width: 1380px;
-  margin: 0 auto;
-  opacity: 1;
-  transition: opacity 1s ease 0s;
-  background-color: $color-warning;
-  background-image: url(/assets/img/global-bg.jpg);
-  background-attachment: fixed;
-  background-position: top center;
-  background-size: cover;
+.main {
+  flex: 1;
+  order: 2;
 
   @include lg-min {
-    padding: 0 $gap;
+    flex: 0 0 calc(100% - 220px - 240px);
+    padding-right: $gap;
+    padding-left: $gap;
   }
-}
-
-a {
-  text-decoration: none;
-  color: $color-light;
+  @include lg-md {
+    flex: 0 0 calc(100% - 220px);
+    padding-right: 0;
+    padding-left: $gap;
+  }
+  @include md {
+    order: 1;
+  }
 }
