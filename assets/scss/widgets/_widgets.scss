@@ -13,4 +13,12 @@
     font-family: $font-header;
     font-weight: 300;
   }
+
+  p {
+    color: $color-gray;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
