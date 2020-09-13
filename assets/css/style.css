@@ -775,6 +775,88 @@ main {
   text-shadow: 1px 1px 3px #000000, 1px 1px 10px #000000;
 }
 
+.widget-news__item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -15px 7.5px;
+  padding: 0 15px 7.5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.widget-news__item-title {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  margin: 0 0 10px;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.widget-news__item-image {
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+  border-radius: 4px;
+}
+
+.widget-news__item-image img {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.widget-news__item-image .img-responsive {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.widget-news__item-excerpt {
+  display: -webkit-box;
+  overflow: hidden;
+  max-height: 75px;
+  font-size: 13px;
+  line-height: 19px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  width: calc(100% - 75px);
+  padding-left: 10px;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+  color: #cccccc;
+}
+
+.widget-news__item a:hover h4 {
+  text-shadow: 1px 1px 3px #000000, 1px 1px 10px #000000;
+}
+
+.widget-news__item a:hover img {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.widget-news__item a:hover .widget-news__item-excerpt {
+  color: #eeeeee;
+}
+
+.widget-news__item a:hover .widget-news__item-wrapper {
+  background: -o-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
 @media (min-width: 480px) {
   .header-logo__img {
     width: 80%;
@@ -836,6 +918,9 @@ main {
         -ms-flex: 0 0 240px;
             flex: 0 0 240px;
     margin-bottom: 15px;
+  }
+  .widget-news {
+    width: 240px;
   }
 }
 
