@@ -38,6 +38,12 @@
     @include sm-min {
       display: flex;
     }
+    @include sm {
+      display: none;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
 
     &-item {
       a {

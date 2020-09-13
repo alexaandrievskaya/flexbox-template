@@ -1,5 +1,9 @@
 .container {
   display: flex;
+
+  @include lg {
+    flex-wrap: wrap;
+  }
 }
 
 main {
@@ -7,7 +11,7 @@ main {
 }
 
 .main {
-  flex: 1;
+  //flex: 1;
   order: 2;
 
   @include lg-min {
@@ -19,6 +23,9 @@ main {
     flex: 0 0 calc(100% - 220px);
     padding-right: 0;
     padding-left: $gap;
+  }
+  @include lg {
+    order: 1;
   }
   @include md {
     order: 1;

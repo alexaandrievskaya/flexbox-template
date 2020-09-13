@@ -25,6 +25,9 @@ body {
   @include lg-min {
     padding: 0 $gap;
   }
+  @include lg {
+    padding: 0 ($gap / 2);
+  }
 }
 
 a {
@@ -35,15 +38,6 @@ a {
   &:focus {
     color: $color-accent;
   }
-}
-
-article,
-aside,
-footer,
-header,
-nav,
-section {
-  display: block;
 }
 
 .img-responsive {
