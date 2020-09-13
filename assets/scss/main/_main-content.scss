@@ -1,0 +1,23 @@
+.main-content {
+  &__title {
+    margin: $gap 0;
+    padding: 8px 12px;
+    letter-spacing: 3px;
+    color: $color-light;
+    border-radius: 7px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 90%, rgba(0, 0, 0, 0) 100%);
+    font-family: $font-header;
+    font-weight: 300;
+    line-height: 1.5em;
+
+    @include sm-min {
+      font-size: 2rem;
+    }
+    @include sm-xs {
+      font-size: 1.5rem;
+    }
+    @include xs {
+      font-size: 1rem;
+    }
+  }
+}
