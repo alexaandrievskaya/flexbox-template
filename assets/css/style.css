@@ -471,11 +471,10 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.5em;
-  overflow: hidden;
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100%;
   max-width: 1380px;
   margin: 0 auto;
@@ -484,7 +483,7 @@ body {
   -o-transition: opacity 1s ease 0s;
   transition: opacity 1s ease 0s;
   background-color: #d8b036;
-  background-image: url(/assets/img/global-bg.jpg);
+  background-image: url("/assets/img/global-bg.jpg");
   background-attachment: fixed;
   background-position: top center;
   background-size: cover;
