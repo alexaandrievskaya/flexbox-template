@@ -1,12 +1,6 @@
-(function ($) {
-
-  $(document).ready(function() {
-    $('body').niceScroll();
+$(document).ready(function () {
+  $('.header-menu__btn').on('click', function () {
+    $(this).toggleClass('header-menu__btn--active');
+    $('.header-menu__list').stop(true, true).fadeToggle(500);
   });
-
-  $('.header-menu__btn').on('click', function() {
-    $(this).toggleClass('active');
-    $('.header-menu__list').toggleClass('active');
-  });
-
-})(jQuery);
+});
