@@ -4,3 +4,7 @@ $(document).ready(function () {
     $('.header-menu__list').stop(true, true).fadeToggle(500);
   });
 });
+
+$(document).ready(function() {
+  $('body').niceScroll();
+});
